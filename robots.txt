@@ -48,3 +48,5 @@ Disallow: /
 # Allow: /
 
 # Bingbot, DuckDuckBot, etc., también están permitidos por defecto.
+
+Sitemap: https://jordimedinaalum-eng.github.io/panaderia-paton/sitemap.xml
