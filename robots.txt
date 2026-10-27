@@ -1,0 +1,50 @@
+# robots.txt - Bloquear entrenamiento de IA, permitir buscadores
+
+# --- Bloqueo de rastreadores de ENTRENAMIENTO ---
+# OpenAI (ChatGPT, DALL-E)
+User-agent: GPTBot
+Disallow: /
+
+# Anthropic (Claude)
+User-agent: ClaudeBot
+Disallow: /
+
+# Google (Gemini, Vertex AI) - No afecta a la Búsqueda de Google
+User-agent: Google-Extended
+Disallow: /
+
+# Common Crawl (Dataset abierto usado por muchos modelos)
+User-agent: CCBot
+Disallow: /
+
+# Meta (Llama)
+User-agent: meta-externalagent
+Disallow: /
+
+# Apple (Apple Intelligence)
+User-agent: Applebot-Extended
+Disallow: /
+
+# Amazon (Alexa, Bedrock)
+User-agent: Amazonbot
+Disallow: /
+
+# ByteDance (TikTok, Doubao)
+User-agent: Bytespider
+Disallow: /
+
+# Mistral AI
+User-agent: MistralAI-Training
+Disallow: /
+
+# Ai2 (Allen Institute for AI)
+User-agent: AI2Bot
+Disallow: /
+
+# --- PERMITIR buscadores (recomendado para no perder tráfico) ---
+# Googlebot está permitido por defecto al no tener una regla Disallow.
+# Si quieres ser explícito, puedes añadir:
+# User-agent: Googlebot
+# Allow: /
+
+# Bingbot, DuckDuckBot, etc., también están permitidos por defecto.
